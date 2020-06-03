@@ -1,4 +1,5 @@
 import random
+import sys
 print('ROCK,PAPER,SCISSORS')
 wins = 0
 losses = 0
