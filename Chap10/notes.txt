@@ -1,0 +1,29 @@
+shutil.copy(source,destination) - copy files and folders
+If you are copying a file to a folder that doesn't exist it will use the name of the folder for renaming the file and save it at that location of the non-existing folder.
+
+shutil.copytree(source, destination) will copy an entire folder and every folder and file contained in it.
+
+shutil.move(source,destination)
+If file with same name exists already then it is overwritten.
+If you are moving a file to a folder that doesn't exist it will use the name of the folder for renaming the file and save it at that location of the non-existing folder.
+
+os.unlink(path) will delete the file at path.
+
+os.rmdir(path) will delete the folder at path. This folder must be empty of any files or folders.
+
+shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
+
+send2trash.send2trash(path) will remove the folder/file and send it to trash/recycling bin.
+It will help you restore deleted data but if you want to free up disk space you will need to delete permenantly.
+
+os.walk() - sends a string of name of current folder, all the folders in the current folder and the files in the current folder.
+
+To create a ZipFile object, call the zipfile.ZipFile() function, passing it a string of the .ZIP file’s filename.
+namelist() method that returns a list of strings for all the files and folders contained in the ZIP file.
+getinfo()
+file_size
+compress_size
+
+extractall()    - saves in the cwd
+extract(filename,destination)
+
