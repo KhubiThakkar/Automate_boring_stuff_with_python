@@ -11,8 +11,8 @@ while i<=2000:
     msg = MIMEMultipart()
     msg['From'] = fromaddr
     msg['To'] = toaddr
-    msg['Subject'] = "WIFI not working since 7th September"
-    body = "Hey, My registration number is 9625122457 under the name 'Parul Thakkar'. My YOU broadband connection has been inactive since 7th September, 2020. No technician has yet came to check and mend the connection.I have been complaining on the customer care number everyday and there has been no effect. \nI am facing a lot of trouble due to this, as my placements are going on and also I am unable to attend my lectures.\nI am going to spam this mail ID till my connection is fixed.\nYours sincerely,\nFrustrated Customer"
+    msg['Subject'] = "YOUR SUBJECT OF MAIL"
+    body = "YOUR MESSAGE"
 
     msg.attach(MIMEText(body, 'plain'))
     server = smtplib.SMTP('smtp.gmail.com', 587)
